@@ -3,21 +3,20 @@ const bodyParser = require('body-parser'); // latest version of exressJS now com
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
-const { Client } = require('pg');
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
-const client = new Client({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
+const db = knex({
+  // connect to your own database here:
+  client: 'pg',
+  connection: {
+    connectionString : process.env.DATABASE_URL,
+    ssl: true,
   }
 });
-
-client.connect();
 
 const app = express();
 
