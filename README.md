@@ -6,3 +6,5 @@ This is the backend api for the face-detection app using artificial intelligence
 2. Run `npm install`
 3. Run `npm start`
 4. Use your own API key at Clarifai
+
+![face-preview](https://user-images.githubusercontent.com/62812999/211224326-f52e8436-b9be-4235-a0fd-e7190464175d.png)
