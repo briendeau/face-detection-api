@@ -22,7 +22,7 @@ const db = knex({
 const app = express();
 
 app.use(cors())
-app.use(express.json()); // latest version of exressJS now comes with Body-Parser!
+app.use(express.json()); // latest version of expressJS now comes with Body-Parser
 console.log("it is working.");
 
 app.get('/', (req, res)=> { res.send(db.users) })
