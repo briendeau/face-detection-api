@@ -1,4 +1,5 @@
-Created by Brian Riendeau
+Created by Brian Riendeau.
+
 This is the backend api for the face-detection app using artificial intelligence to detect faces in pictures.
 
 1. First clone this repo
