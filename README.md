@@ -1,5 +1,7 @@
 Created by Brian Riendeau.
 
+Live link - https://facedetection1.herokuapp.com/
+
 This is the backend api for the face-detection app using artificial intelligence to detect faces in pictures.
 
 1. First clone this repo
