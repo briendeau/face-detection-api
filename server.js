@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser'); // latest version of exressJS comes with Body-Parser!
+const bodyParser = require('body-parser'); // latest version of expressJS comes with Body-Parser!
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
