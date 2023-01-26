@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser'); // latest version of exressJS now comes with Body-Parser!
+const bodyParser = require('body-parser'); // latest version of exressJS comes with Body-Parser!
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
@@ -22,7 +22,7 @@ const db = knex({
 const app = express();
 
 app.use(cors())
-app.use(express.json()); // latest version of expressJS now comes with Body-Parser
+app.use(express.json()); 
 console.log("it is working.");
 
 app.get('/', (req, res)=> { res.send(db.users) })
