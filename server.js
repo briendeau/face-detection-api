@@ -11,7 +11,6 @@ const image = require('./controllers/image');
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
-  // connect to your own database here:
   client: 'pg',
   connection: {
     connectionString: process.env.DATABASE_URL,
